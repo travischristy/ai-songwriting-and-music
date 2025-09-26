@@ -5,25 +5,19 @@
 **New KB scaffold:** `Knowledge/v5.0/**`  
 **Canonical v5 sources:** `v5.0 Migration Reference/Latest Knowledge/**`
 
-## Goals
-- Replace Suno v4.5 (and earlier) guidance with Suno v5 across `Knowledge/v5.0/**`.
-- Update capabilities, prompting best practices, parameters/controls, length/Extend, negatives/exclusions, mixing notes, genre guidance, troubleshooting, FAQs, and examples.
-- Preserve model-agnostic content; move v4.5-only notes to **Deprecated**.
 
-## Scope (non-negotiable)
-- Rename model references where technically correct: `Suno v4.5|v4|v3` → `Suno v5`.
-- Remove obsolete v4.5 workarounds; add v5-specific techniques and examples.
-- Evidence-tag any numbers/limits changed: `[Source: <file> §<heading>]`.
+## KNOWLEDGE BASE INVENTORY AND DATA WRANGLING
 
-## File Targets
-- **Include:** `Knowledge/v5.0/**/*.md`
-- **Exclude:** `Knowledge/v5.0/03_Expert_Songwriter_Books/**`, `Knowledge/v5.0/06_Datesets/**`, `**/archive/**`, `**/images/**`, `**/assets/**`
+Analyze Existing v4.5 Inventory and Create Index of Outdated References:
 
-## Migration Map (single source of truth)
+1. Create a full knowledge base file inventory table and file tree
 
+2. Explore the existing knowledge and create a topic modeling / subject matter table to gain a better understanding of its contents for downstream restructuring and edits/updates/additions
 
-## Rewrite Rules
+3. Search/Scan all text for instances where a previous model instance is used (v4.5, v4.5+, v4, v3.5 etc) to create an index of all potentially outdated/deprecated content found in `Knowledge/v4.5/`
 
+4. Label index with proposed change to either update the knowledge in accordance with the new v5.0 information or divorce suno model implications / references from knowledge that is not Suno AI model relevant / dependent. The goal is to prioritize updating knowledge where the suno model capabilities / limitations / specifics directly correlate to the knowledge subject matter. Where knowledge can exist agnostic to the suno ai model best practices / capabilities / specifics it is better not to list specific model versions or content that can be later deprecated by a future change / update. 
 
-## Deliverables
+5. Update knowledge inventory based on the results of the indexing and changes assessment to facilitate the migration process next steps. 
+
 
