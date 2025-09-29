@@ -1,0 +1,86 @@
+facts:
+  - id: v5_global_migration_rules
+    summary: "Suno V5 practice prioritizes concise, high-signal prompts, minimal metatagging, explicit but sparing exclusions, and stem-focused editing to exploit the model's improved obedience and mix fidelity."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "10-16"
+  - id: v5_exclusion_guidance
+    summary: "V5 honors explicit negations such as 'no drums' or `EXCLUDE:` directives, with guidance to limit exclusions to two, place them near the end of the prompt (or move forward if ignored), and resolve conflicting descriptors."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "12-168"
+  - id: v5_tagging_markup
+    summary: "Use square brackets for structural or performance instructions and parentheses for vocalized content, keeping tags sparse to avoid over-specification."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "31-34"
+  - id: v5_prompt_grammar
+    summary: "Recommended prompt order is style nucleus → mood/energy → vocal persona → key instruments → production feel → exclusions → target length, with one production feel and 1–2 words per slot to maintain signal hygiene."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "143-158"
+  - id: v5_preflight_checklist
+    summary: "Before generating, confirm the style nucleus, mood/vocal front-loading, single production feel, ≤2 exclusions, minimal section tags, explicit length if needed, and saved prompt/lyrics for reproducibility."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "189-196"
+  - id: v5_editing_best_practices
+    summary: "Optimize takes by generating concise batches, selecting for vocal/arrangement quality, and using partial regeneration with stems for localized fixes before light external EQ or mastering."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "82-88"
+  - id: v5_troubleshooting_framework
+    summary: "Address V5 issues by targeting low-end clarity via stems, stating length succinctly and fixing drift with section re-generation, moving exclusions earlier if ignored, and limiting conflicting cues to preserve structure and energy."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "107-129"
+  - id: v5_paradigm_shift
+    summary: "Compared to v4.5, V5 prefers concise directives, reliably follows exclusion commands, delivers cleaner audio with improved pronunciation, and adheres more closely to structural tags and length requests."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "15-18"
+  - id: v5_tempo_pitfall
+    summary: "Over-scripting, excessive metatagging, and extreme BPM demands inherited from v4.5 reduce V5 coherence, so prompts should avoid chronological staging and unrealistic tempo directives."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "24-26"
+  - id: v5_three_layers_control
+    summary: "Suno V5 prompting combines a high-level style prompt, explicit lyrical syntax commands, and implicit poetic structure cues, leveraging all three layers to shape arrangement, performance, and melody."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "32-47"
+  - id: v5_persona_cover_features
+    summary: "Persona captures a track's vocal and atmospheric identity for reuse, while Covers transform uploaded audio into new styles, though personas may leak source lyrics as a beta limitation."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "150-156"
+  - id: v5_negative_prompting
+    summary: "Negative prompting with `EXCLUDE:` or 'without' is central to V5 workflows because the model reliably honors exclusions, enabling lean style prompts with precise instrumentation control."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "188-200"
+  - id: v5_boomy_bass_fix
+    summary: "When V5 outputs muddy or bass-heavy mixes, prompt adjustments like 'without boomy bass' plus stem EQ between 90–250 Hz offer effective remediation."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "175-180"
+  - id: v5_stems_mixing
+    summary: "Post-generation mixing guidance includes high-passing non-bass elements at 80–120 Hz, targeting -14 to -9 LUFS with -1 dBTP ceiling for streaming, exporting 24-bit/48 kHz WAV stems, and balancing bass vs. kick before final limiting."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/V5_Stems_Mixing_Guide.md"
+      lines: "9-30"
+  - id: v5_style_deconstruction
+    summary: "Style emulation in V5 relies on deconstructing six elements—arrangement, harmony, rhythm, part writing, lyrics, and production—plus managing hype, tension, and implied tension to describe the energy curve without citing artists."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/The Complete Guide to Sonic Emulation in Suno V5.md"
+      lines: "17-76"
+  - id: v5_lyrics_markup_rules
+    summary: "Brackets deliver non-lyrical instructions such as [Chorus] or [Whispering], parentheses add vocalized ad-libs, and punctuation manipulates pacing, supporting layered control alongside EXCLUDE prompts."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/The Complete Guide to Sonic Emulation in Suno V5.md"
+      lines: "104-129"
+  - id: v5_style_workflows
+    summary: "For emulation, analyze multiple tracks, identify consistent traits, and assemble them into the style prompt; similar deconstruction enables targeted covers, mashups, and remasters using Suno's Custom, Cover, or Persona features."
+    citation:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/The Complete Guide to Sonic Emulation in Suno V5.md"
+      lines: "135-184"
