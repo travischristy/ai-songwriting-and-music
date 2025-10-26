@@ -1,0 +1,76 @@
+facts:
+  - id: global-migration-rules
+    summary: "Suno V5 mandates concise directives, explicit but sparing exclusions, minimal structural metatags, and no longer needs v4.5-style mastering hacks; duration and stem editing are first-line fixes."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "9-16"
+  - id: lyric-markup
+    summary: "Use square brackets for sections and parentheses for ad-libs/performance cues, keeping markup sparse to maintain coherence."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "33-35"
+  - id: prompt-order
+    summary: "Recommended prompt grammar order is style nucleus, mood/energy, vocal persona, key instruments, production feel, exclusions, target length, optional lyrical topic, with 1–2 words per slot and no conflicting descriptors."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "143-158"
+  - id: exclusions
+    summary: "V5 reliably honors exclusions stated as plain-language negations like 'no drums' or 'EXCLUDE:' with a budget of two; move negations earlier if ignored and avoid conflicting descriptors."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "163-169"
+  - id: length-control
+    summary: "State target duration succinctly; V5 adheres well, but for long-form pieces verify sectional contrast and prefer section-level regeneration if drift occurs."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "170-188"
+  - id: operational-checklist
+    summary: "Pre-flight checklist covers style nucleus, mood+vocal front-loaded, single production feel, ≤2 exclusions, minimal tags, stated length, and saved prompt/lyrics."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/suno_v_5_core_knowledge_consolidated.md"
+      lines: "189-196"
+  - id: v5-advancements
+    summary: "V5 improves adherence to concise directives, reliably honors functional exclusions, delivers cleaner mixes but may have boomy low end, and better pronounces lyrics while respecting structural tags and length."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "15-18"
+  - id: v5-pitfalls
+    summary: "Avoid over-scripting, excessive metatagging, and unrealistic tempo demands because they cause incoherence, non-song outputs, or reversion to default tempos."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "24-27"
+  - id: energy-curve
+    summary: "Design energy by controlling arrangement density, rhythmic subdivision, and lyrical scope, using tension cues like crescendo tags or production effects to build toward choruses."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "58-72"
+  - id: beta-features
+    summary: "Pro users can leverage Personas to capture a track's vocal/energy signature and Covers to transform uploaded audio while retaining melody, noting beta quirks like lyric carryover."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "150-181"
+  - id: mix-fixes
+    summary: "For boomy bass, export stems and rebalance with EQ cuts between 90-250 Hz; simplify prompts if structure drifts and specify length explicitly when V5 shortens outputs."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/An Advanced Guide to High-Quality Music Creation with Suno V5.md"
+      lines: "175-180"
+  - id: stems-workflow
+    summary: "Export dedicated stems, balance bass vs kick first, brighten vocals lightly, and finalize with subtle EQ plus limiter targeting -14 to -9 LUFS and -1.0 dBTP for streaming."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Core/V5_Stems_Mixing_Guide.md"
+      lines: "18-30"
+  - id: style-emulation
+    summary: "Emulate artists without naming them by deconstructing genre, vocal delivery, instrumentation, production style, and mood, then combine into concise directives with strategic exclusions."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/V5 Guide: Emulating Styles Without Naming Artists.md"
+      lines: "3-69"
+  - id: syntax-brackets
+    summary: "Square brackets are for non-lyrical instructions like [Chorus] or [Whispering]; parentheses denote vocalized content such as ad-libs, ensuring AI sings them."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/Deconstructing A Song's Style for AI: A Guide to Suno V5.md"
+      lines: "101-108"
+  - id: layered-control
+    summary: "Effective prompting uses three layers: concise style prompt, lyrical syntax tags, and structured poetic cues to shape melody and pacing."
+    source:
+      path: "v5.0 Migration Reference/Latest Knowledge/Style Emulation/Deconstructing A Song's Style for AI: A Guide to Suno V5.md"
+      lines: "93-114"
