@@ -1,4 +1,4 @@
-# Song Building, Mastering Lyric Writing
+# Song Buildind Analysis & Report
 
 ## In-Depth Analysis and Report: "Song Building, Mastering Lyric Writing" Transcript
 
